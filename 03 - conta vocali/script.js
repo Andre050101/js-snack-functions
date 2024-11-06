@@ -1,6 +1,6 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
-const word = 'javascript';
+const word = "Javascript";
 const vocalsArray = [];
 // Dichiara la funzione qui.
 /**
