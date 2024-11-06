@@ -3,7 +3,7 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
-// Dichiara la funzione qui.
+// Dichiara la funzione qui. (Funzione tradizionale)
 /**Funzione che prende in ingresso un array di stringhe e restituisce un array formato da iniziali delle stringhe appartenenti all'array in ingresso
  * 
  * @param {Array} array //array in ingresso dalla quale estrarre le iniziali 
@@ -16,6 +16,9 @@ function firstLetterArray (array){              //Dichiarazione funzione firstLe
     }
     return firstLetter;                         //Ritorna array con iniziali
 }
+// Dichiara la funzione qui. (Arrow function)
+const firstLetterArray = (array) => array.map(word => word.charAt(0));
+console.log(firstLetterArray(names));
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log("L'array formato dalle lettere iniziali degli elementi appartenenti all'array di partenza è: "+firstLetterArray(names));
